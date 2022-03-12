@@ -1,0 +1,78 @@
+html
+{
+				cursor: url(imagens/mata_mosca.png) 30 30 , auto ; 
+}
+body
+{
+				background-image: url(imagens/bg.jpg);
+				background-repeat: no-repeat; 
+}
+@media screen and (min-height: 200px) and (max-height: 500px)
+{ 
+  body
+  {
+				background-size: 100%;
+				}
+}
+@media screen and (min-height: 500px) and (max-height: 779px)
+{ 
+  body
+  {
+				background-size:150%;
+				}
+}
+@media screen and (min-height: 800px) and (max-height: 2005px)
+{ 
+  body
+  {
+				background-size: 250%;
+				}
+}
+.painel
+{
+  position: absolute;
+  width: 200px;
+				padding: 10px;
+				/* Fixar no canto esquerdo */
+				left: 0px;
+				bottom: 0px; 
+		 	border-top: 1px solid white;
+		 	background-color: white;
+		 	opacity: 50%;
+}
+.vidas
+{
+				float: left;
+}
+.cronometro
+{
+				float: left;
+				font-size: 20px;
+				font-weight: bold;
+}
+.primeiroMosquito
+{
+				width: 100px;
+				height: 100px;
+}
+.segundoMosquito
+{
+				width: 150px;
+				height: 150px;
+}
+.terceiroMosquito
+{
+				width: 200px;
+				height: 200px;
+}
+/*posicao do lado*/
+.ladoA
+{ 
+  /* Lado original */
+				transform: scaleX(1);
+}
+.ladoB
+{ 
+  /* Inversao do ladp */
+				transform: scaleX(-1);
+}
