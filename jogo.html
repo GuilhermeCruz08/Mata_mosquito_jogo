@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-				<meta charset="UTF-8">
-				<title>Título da página</title>
-				<script src="codigo.js">					
-				</script>
-			 <link rel="stylesheet" href="estilo.css">
-</head>
-<body onresize="MudancaTamanho()" >
-				<!-- PAINEL -->
-				<section class="painel">
-								<div class="vidas">
-												<img src="imagens/coracao_cheio.png" alt="Vidas" id="vida1">
-												<img src="imagens/coracao_cheio.png" alt="Vidas" id="vida2">
-       <img src="imagens/coracao_cheio.png" alt="Vidas" id="vida3">
-								</div> <!-- vidas -->
-								
-								<div class="cronometro">
-												Tempo restante
-       <section id="cronometro">
-       				
-       </section>
-								</div> <!-- cronometro -->
-				</section>
-				<!-- MOSQUITO -->
-				<script>										
-						 /*
+  <head>
+    <meta charset="UTF-8" />
+    <title>Título da página</title>
+    <script src="codigo.js"></script>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body onresize="MudancaTamanho()">
+    <!-- PAINEL -->
+    <section class="painel">
+      <div class="vidas">
+        <img src="imagens/coracao_cheio.png" alt="Vidas" id="vida1" />
+        <img src="imagens/coracao_cheio.png" alt="Vidas" id="vida2" />
+        <img src="imagens/coracao_cheio.png" alt="Vidas" id="vida3" />
+      </div>
+      <!-- vidas -->
+
+      <div class="cronometro">
+        Tempo restante
+        <section id="cronometro"></section>
+      </div>
+      <!-- cronometro -->
+    </section>
+    <!-- MOSQUITO -->
+    <script>
+      /*
 								Adicinando		elementos
     à tela 
      */
-    document.getElementById("cronometro").innerHTML = tempo;
-								var limpar_mosca = setInterval(function()
-    {
-     PosAleatoria()
-    }, criaMosquito_tempo);
-				</script>
-
-</body>
+      document.getElementById("cronometro").innerHTML = tempo;
+      var limpar_mosca = setInterval(function () {
+        PosAleatoria();
+      }, criaMosquito_tempo);
+    </script>
+  </body>
 </html>
